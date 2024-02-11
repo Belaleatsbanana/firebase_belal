@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:finalicthub/cubit/home_state.dart';
-import 'package:finalicthub/data_model/category_data_model.dart';
+import 'package:firebase_belal/cubit/home_state.dart';
+import 'package:firebase_belal/data_model/category_data_model.dart';
 
 class HomeCubit extends Cubit<HomeState> {
   HomeCubit() : super(HomeInitial());

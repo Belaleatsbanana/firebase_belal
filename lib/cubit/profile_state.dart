@@ -1,4 +1,4 @@
-import 'package:finalicthub/data_model/user_data_model.dart';
+import 'package:firebase_belal/data_model/user_data_model.dart';
 
 abstract class ProfileState {}
 

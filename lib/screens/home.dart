@@ -1,12 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:finalicthub/auth_screen/login_screen.dart';
-import 'package:finalicthub/cubit/home_cubit.dart';
-import 'package:finalicthub/cubit/profile_cubit.dart';
-import 'package:finalicthub/screens/booking_screen.dart';
-import 'package:finalicthub/screens/home_screen.dart';
-import 'package:finalicthub/screens/profile_screen.dart';
+import 'package:firebase_belal/auth_screen/login_screen.dart';
+import 'package:firebase_belal/cubit/home_cubit.dart';
+import 'package:firebase_belal/cubit/profile_cubit.dart';
+import 'package:firebase_belal/screens/booking_screen.dart';
+import 'package:firebase_belal/screens/home_screen.dart';
+import 'package:firebase_belal/screens/profile_screen.dart';
 
 class HomeLayout extends StatefulWidget {
   const HomeLayout({super.key});

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:finalicthub/auth_screen/signup_screen.dart';
-import 'package:finalicthub/cubit/auth_cubit.dart';
-import 'package:finalicthub/cubit/auth_state.dart';
-import 'package:finalicthub/screens/home.dart';
-import 'package:finalicthub/widgets/ebutton.dart';
-import 'package:finalicthub/widgets/formfield.dart';
+import 'package:firebase_belal/auth_screen/signup_screen.dart';
+import 'package:firebase_belal/cubit/auth_cubit.dart';
+import 'package:firebase_belal/cubit/auth_state.dart';
+import 'package:firebase_belal/screens/home.dart';
+import 'package:firebase_belal/widgets/ebutton.dart';
+import 'package:firebase_belal/widgets/formfield.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -24,24 +24,40 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueAccent,
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Form(
           key: formKey,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Text(
-                'Welcome back! Glad\nto see you, Again!',
-                textAlign: TextAlign.start,
-                style: TextStyle(
-                  color: Color(0xFF1E232C),
-                  fontSize: 30,
-                  fontWeight: FontWeight.w700,
-                ),
+              const Icon(
+                Icons.account_circle,
+                size: 100,
+                color: Colors.white,
               ),
               const SizedBox(height: 20),
+              const Text(
+                'Welcome back!',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 10),
+              const Text(
+                'Glad to see you again!',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                ),
+              ),
+              const SizedBox(height: 40),
               MyFormField(
                 controller: emailController,
                 label: 'Email',
@@ -53,6 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   return null;
                 },
               ),
+              const SizedBox(height: 20),
               MyFormField(
                 controller: passwordController,
                 label: 'Password',
@@ -66,6 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   return null;
                 },
               ),
+              const SizedBox(height: 30),
               BlocConsumer<AuthCubit, AuthState>(
                 listener: (context, state) {
                   if (state is AuthError) {
@@ -104,34 +122,34 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text(
-                    'Don\'t have an account?',
+                    'Don\'t have an account? ',
                     style: TextStyle(
-                      color: Color(0xFF1E232C),
-                      fontSize: 15,
-                      fontFamily: 'Urbanist',
-                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
+                      fontSize: 16,
                     ),
                   ),
-                  TextButton(
+                  TextButton.icon(
                     onPressed: () {
                       FocusScope.of(context).unfocus();
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => SignupScreen(),
+                          builder: (context) => const SignupScreen(),
                         ),
                       );
                     },
-                    child: const Text(
+                    icon: const Icon(
+                      Icons.person_add,
+                      color: Colors.white,
+                    ),
+                    label: const Text(
                       'Register',
                       style: TextStyle(
-                        color: Color(0xFFF14336),
-                        fontSize: 15,
-                        fontFamily: 'Urbanist',
-                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),

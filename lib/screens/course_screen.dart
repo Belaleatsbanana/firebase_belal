@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:finalicthub/cubit/category_cubit.dart';
-import 'package:finalicthub/cubit/category_state.dart';
+import 'package:firebase_belal/cubit/category_cubit.dart';
+import 'package:firebase_belal/cubit/category_state.dart';
 
 class CategoryScreen extends StatelessWidget {
   final String categoryName;

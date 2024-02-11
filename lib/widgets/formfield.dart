@@ -28,8 +28,8 @@ class MyFormField extends StatelessWidget {
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.0),
             borderSide: const BorderSide(
-              color: Color(0xFFDADADA),
-              width: 1,
+              color: Colors.black,
+              width: 3,
             ),
           ),
           focusedBorder: OutlineInputBorder(

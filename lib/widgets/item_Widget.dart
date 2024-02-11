@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:finalicthub/screens/course_screen.dart';
+import 'package:firebase_belal/screens/course_screen.dart';
 class ItemWidget extends StatelessWidget {
   final String image;
   final String name;

@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "72323606554",
-    "project_id": "fir-df093",
-    "storage_bucket": "fir-df093.appspot.com"
+    "project_number": "996722423659",
+    "project_id": "icthubapp-3ccad",
+    "storage_bucket": "icthubapp-3ccad.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:72323606554:android:2974597e2087c6535c09a3",
+        "mobilesdk_app_id": "1:996722423659:android:c38825cf926fd30df6fe2e",
         "android_client_info": {
           "package_name": "com.example.firebase_belal"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBZyNlMWqmvFswwE43jr9qQtPhm35BZvpI"
+          "current_key": "AIzaSyDDZb9kf4ZTAr8V4YMB2vPGxw22ZklsdUk"
         }
       ],
       "services": {

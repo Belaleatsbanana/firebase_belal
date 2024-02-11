@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:firebase_belal/cubit/auth_cubit.dart';
-import 'package:firebase_belal/cubit/auth_state.dart';
-import 'package:firebase_belal/screens/home.dart';
-import 'package:firebase_belal/widgets/ebutton.dart';
-import 'package:firebase_belal/widgets/formfield.dart';
+import 'package:finalicthub/cubit/auth_cubit.dart';
+import 'package:finalicthub/cubit/auth_state.dart';
+import 'package:finalicthub/screens/home.dart';
+import 'package:finalicthub/widgets/ebutton.dart';
+import 'package:finalicthub/widgets/formfield.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});

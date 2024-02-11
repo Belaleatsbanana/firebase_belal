@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:firebase_belal/cubit/profile_cubit.dart';
-import 'package:firebase_belal/cubit/profile_state.dart';
-import 'package:firebase_belal/widgets/pf_widget.dart';
+import 'package:finalicthub/cubit/profile_cubit.dart';
+import 'package:finalicthub/cubit/profile_state.dart';
+import 'package:finalicthub/widgets/pf_widget.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});

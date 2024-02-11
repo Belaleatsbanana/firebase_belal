@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:firebase_belal/cubit/home_cubit.dart';
-import 'package:firebase_belal/cubit/home_state.dart';
-import 'package:firebase_belal/widgets/item_Widget.dart';
+import 'package:finalicthub/cubit/home_cubit.dart';
+import 'package:finalicthub/cubit/home_state.dart';
+import 'package:finalicthub/widgets/item_Widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

@@ -2,10 +2,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:firebase_belal/auth_screen/login_screen.dart';
-import 'package:firebase_belal/cubit/auth_cubit.dart';
-import 'package:firebase_belal/screens/home.dart';
-import 'package:firebase_belal/observer.dart';
+import 'package:finalicthub/auth_screen/login_screen.dart';
+import 'package:finalicthub/cubit/auth_cubit.dart';
+import 'package:finalicthub/screens/home.dart';
+import 'package:finalicthub/observer.dart';
 
 import 'firebase_options.dart';
 

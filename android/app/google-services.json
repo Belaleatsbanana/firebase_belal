@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "72323606554",
+    "project_id": "fir-df093",
+    "storage_bucket": "fir-df093.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72323606554:android:2974597e2087c6535c09a3",
+        "android_client_info": {
+          "package_name": "com.example.firebase_belal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZyNlMWqmvFswwE43jr9qQtPhm35BZvpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
